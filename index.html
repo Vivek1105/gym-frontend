@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS.COM</title>
+    
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset  */
+    body{
+        
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/img.jpg');
+    
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 35px;
+        top: 20px;
+
+    }
+    .left img{
+        width: 110px;
+
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid blue; */
+        
+
+    }
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        display: inline-block;
+        /* border:2px solid green; */
+
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 0px 20px;
+        display: inline-block;
+
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: skyblue;
+    }
+    .navbar li{
+        font-size: 24px;
+        display: inline-block;
+    }
+    .btn{
+        margin: opx 10px;
+        color: white;
+        background: black;
+        padding: 5px 20px;
+        border: 3px solid rgb(56, 7, 66);
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background: rgb(21, 84, 201);
+
+    }
+    .box{
+        border: 3px solid rgb(238, 234, 241);
+        margin: 100px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius:20px ;
+    }
+    .form-group input{
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 2px;
+        margin: 12px auto;
+        border-radius: 5px;
+        border: 2px solid rgb(241, 66, 13);
+    }
+    .box h1{
+        text-align: center;
+    }
+    .box button{
+        display: block;
+        width: 20%;
+        margin: 20px auto;
+
+    }
+
+</style>
+<body>
+    <header class="Header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="img/lobo.jpg" alt="">
+            <div>FITNESS GURU</div>
+        </div>
+
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"class="active" >Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Tips</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Right box for buttons  -->
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn"> Call Now</button>
+        </div>
+
+
+    </header>
+    <div class="box">
+        <h1>Welcome to Our Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your City Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Mail">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
